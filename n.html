@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KisanTech</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #174d35;
+            background: #fff;
+        }
+
+        /* Header */
+        header {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 6%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            font-size: 40px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .logo p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 12px;
+            font-size: 14px;
+        }
+
+        nav a:first-child {
+            color: #168044;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 22px;
+            border-radius: 25px;
+            border: 1px solid #188047;
+            background: white;
+            color: #188047;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signup {
+            background: #188047;
+            color: white;
+            margin-left: 8px;
+        }
+
+        /* Hero */
+        .hero {
+            height: 350px;
+            padding: 55px 7%;
+            background-image:url("main.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h4 {
+            margin: 0;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 10px 0;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            width: 400px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .shop {
+            background: #168044;
+            color: white;
+            margin-right: 10px;
+        }
+
+        /* Products */
+        .products {
+            padding: 30px 5%;
+        }
+
+        .products h4 {
+            margin-bottom: 5px;
+        }
+
+        .products h2 {
+            margin: 5px 0;
+            font-size: 28px;
+        }
+
+        .products > p {
+            color: #555;
+        }
+
+        .cards {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+        }
+
+        .card {
+            min-width: 150px;
+            background: #f4f8f1;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 15px;
+            margin: 12px;
+        }
+
+        .card p {
+            font-size: 12px;
+            margin: 12px;
+            color: #666;
+        }
+
+        /* Benefits */
+        .benefits {
+            background: #f0f7ec;
+            display: flex;
+            justify-content: space-around;
+            padding: 25px 5%;
+            text-align: center;
+        }
+
+        .benefit {
+            width: 18%;
+        }
+
+        .benefit span {
+            font-size: 30px;
+        }
+
+        .benefit h3 {
+            font-size: 15px;
+        }
+
+        .benefit p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Bottom */
+        .bottom {
+            background: #164d2e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .bottom h2 {
+            margin: 5px;
+        }
+
+        .bottom p {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <div class="logo-icon">🌱</div>
+
+            <div>
+                <h1>Kisantech</h1>
+                <p>Farmers → Consumers</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">For Farmers</a>
+            <a href="#">For Consumers</a>
+            <a href="#">Our Products</a>
+            <a href="#">How It Works</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div>
+            <button>Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+	
+        <h4>DIRECT FROM FARMERS</h4>
+
+        <h2>
+            Fresh Food.<br>
+            Fair Prices.
+        </h2>
+
+        <p>
+            Kisantech connects farmers directly to consumers,
+            cutting middlemen and ensuring better earnings
+            for farmers and lower prices for you.
+        </p>
+
+        <button class="shop">Shop Now →</button>
+        <button>Support Farmers</button>
+
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products">
+
+        <h4>🌿 OUR SOURCES</h4>
+
+        <h2>Fresh Products from Our Farmers</h2>
+
+        <p>Real food. Real farmers. Direct to you.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="veg.jpg">
+                <h3>Vegetables</h3>
+                <p>Farm fresh & chemical free</p>
+            </div>
+
+            <div class="card">
+                <img src="fruits.jpg">
+                <h3>Fruits</h3>
+                <p>Naturally ripened & fresh</p>
+            </div>
+
+            <div class="card">
+                <img src="grains.jpg">
+                <h3>Grains & Pulses</h3>
+                <p>Pure, nutritious & fresh</p>
+            </div>
+
+            <div class="card">
+                <img src="dairy.jpg">
+                <h3>Dairy Products</h3>
+                <p>Fresh milk, curd & paneer</p>
+            </div>
+
+            <div class="card">
+                <img src="spices.jpg">
+                <h3>Spices</h3>
+                <p>Authentic taste from farms</p>
+            </div>
+
+            <div class="card">
+                <img src="honey.jpg">
+                <h3>Organic & Natural</h3>
+                <p>Pure and natural</p>
+            </div>
+
+            <div class="card">
+                <img src="eggs.jpg">
+                <h3>Eggs</h3>
+                <p>Fresh & healthy</p>
+            </div>
+
+            <div class="card">
+                <img src="pickle.jpg">
+                <h3>Processed Foods</h3>
+                <p>Traditional & homemade</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Benefits -->
+    <section class="benefits">
+
+        <div class="benefit">
+            <span>👨‍🌾</span>
+            <h3>Direct from Farmers</h3>
+            <p>No middlemen. No extra costs.</p>
+        </div>
+
+        <div class="benefit">
+            <span>₹</span>
+            <h3>Lower Prices for You</h3>
+            <p>Fresh products at better prices.</p>
+        </div>
+
+        <div class="benefit">
+            <span>🌿</span>
+            <h3>Fresh & Quality Produce</h3>
+            <p>Natural goodness from farms.</p>
+        </div>
+
+        <div class="benefit">
+            <span>🤝</span>
+            <h3>Stronger Communities</h3>
+            <p>Support local farmers.</p>
+        </div>
+
+        <div class="benefit">
+            <span>🛡️</span>
+            <h3>Safe & Transparent</h3>
+            <p>Know where your food comes from.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Bottom -->
+    <section class="bottom">
+
+        <h2>Support Farmers • Eat Fresh • Build a Better Future</h2>
+
+        <p>Join Kisantech and be a part of a fair food system.</p>
+
+        <button class="shop">Get Started →</button>
+        <button>Learn More</button>
+
+    </section>
+
+</body>
+</html>
